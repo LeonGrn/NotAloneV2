@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private final String john = "a";
     private final String ofer = "b";
     private final String familyMember = "c";
+    private final String elder = "d";
 
 
     @Override
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
             else if(name.getText().toString().equals("c"))
             {
                 Intent intent = new Intent(MainActivity.this, FamilyMember.class);
+                startActivity(intent);
+            }
+            else if(name.getText().toString().equals("d"))
+            {
+                Intent intent = new Intent(MainActivity.this, ElderActivity.class);
                 startActivity(intent);
             }
         }
