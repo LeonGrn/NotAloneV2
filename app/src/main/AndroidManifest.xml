@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".ElderActivity"></activity>
+        <activity android:name=".ZoyaProfile"></activity>
+        <activity android:name=".ElderActivity" />
         <activity android:name=".CheckReviews" />
         <activity android:name=".FamilyMember" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".Profile" />
         <activity
             android:name=".StudentActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CheckProfile"
             android:screenOrientation="portrait" />
