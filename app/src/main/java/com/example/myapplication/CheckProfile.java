@@ -32,7 +32,7 @@ public class CheckProfile extends AppCompatActivity {
         public void onClick(View view)
         {
             Intent intent = new Intent(CheckProfile.this, Profile.class);
-            intent.putExtra("fromManager" , value);
+            intent.putExtra("keyName" , value);
             startActivity(intent);
             finish();
         }

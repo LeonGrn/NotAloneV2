@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -25,6 +26,7 @@ public class Profile extends AppCompatActivity {
         textView12312 = findViewById(R.id.textView12312);
         gobackto = findViewById(R.id.gobackto);
         create = findViewById(R.id.create);
+
         data = getIntent().getExtras().getString("keyName","defaultKey");
 
         if (data.equals("ofer"))
@@ -40,6 +42,16 @@ public class Profile extends AppCompatActivity {
             create.setVisibility(View.INVISIBLE);
 
         }
+        else if(data.equals("familyMember"))
+        {
+            imageViewofer.setImageResource(R.drawable.guy);
+            textView12312.setText("Guy Afik - Student");
+            create.setVisibility(View.INVISIBLE);
+
+        }
+
+
+
         gobackto.setOnClickListener(goprofile);
     }
 
@@ -47,19 +59,25 @@ public class Profile extends AppCompatActivity {
         @Override
         public void onClick(View view)
         {
+            Log.i("1321231231" , data);
             if(data.equals("ofer"))
             {
                 Intent intent = new Intent(Profile.this, StudentActivity.class);
                 startActivity(intent);
                 finish();
             }
-            else
+            else if(data.equals("guy"))
             {
                 Intent intent = new Intent(Profile.this, CheckProfile.class);
                 startActivity(intent);
                 finish();
             }
-
+            else if(data.equals("familyMember"))
+            {
+                Intent intent = new Intent(Profile.this, FamilyMember.class);
+                startActivity(intent);
+                finish();
+            }
         }
     };
 }

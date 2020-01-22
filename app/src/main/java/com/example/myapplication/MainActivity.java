@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private final String john = "a";
     private final String ofer = "b";
+    private final String familyMember = "c";
 
 
     @Override
@@ -48,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
             else if(name.getText().toString().equals("b"))
             {
                 Intent intent = new Intent(MainActivity.this, StudentActivity.class);
+                startActivity(intent);
+            }
+            else if(name.getText().toString().equals("c"))
+            {
+                Intent intent = new Intent(MainActivity.this, FamilyMember.class);
                 startActivity(intent);
             }
         }
