@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun"
+    tools:context=".authorities">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Welcome, John"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/gobackMain"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_back"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="230dp"
+        android:text="Manager"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Choose your option"
+        android:textSize="20dp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:layout_marginTop="250dp"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn_check_profile"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/ic_roundedbutton"
+            android:layout_margin="5dp"
+            android:text="check new profiles" />
+
+
+
+        <Button
+            android:id="@+id/btn_check_revie"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/ic_roundedbutton"
+            android:text="check reviews" />
+
+        <Button
+            android:id="@+id/btn_serch"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/ic_roundedbutton"
+
+            android:text="explore exist profiles " />
+    </GridLayout>
+
+</RelativeLayout>
